@@ -6,7 +6,7 @@ const CarWidget = () => {
   return (
     <div className="cart-container">
       <FaShoppingCart className="cart-icon" />
-      <span className="cart-count">5</span> {/* Aquí pones el número fijo */}
+      <span className="cart-count">5</span> 
     </div>
   );
 };
