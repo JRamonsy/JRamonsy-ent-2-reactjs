@@ -3,10 +3,6 @@
     display: inline-block;
   }
   
-  .cart-icon {
-    font-size: 30px;
-    color: #b5b1b1;
-  }
   
   .cart-count {
     position: absolute;

@@ -2,9 +2,8 @@ import './App.css'
 import NavBar from './components/navbar/NavBar'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import SparePartsPage from './pages/SparePartsPage'
-import DevicesPage from './pages/DevicesPage'
-import SensorsPage from './pages/SensorsPage'
+import ProductDetailsPage from './pages/ProductDetailsPage'
+import ProductCategoryPage from './pages/ProductCategoryPage'
 
 function App() {
 
@@ -14,9 +13,8 @@ function App() {
       <NavBar/>
       <Routes>
         <Route exact path='/' element={<HomePage/>} />
-        <Route exact path='/spare' element={<SparePartsPage/>} />  
-        <Route exact path='/sensor' element={<SensorsPage/>} />  
-        <Route exact path='/device' element={<DevicesPage/>} />  
+        <Route exact path='/product/:id' element={<ProductDetailsPage/>} /> 
+        <Route exact path="/category/:category" element={<ProductCategoryPage />} />  
       </Routes>
     </div>
 
